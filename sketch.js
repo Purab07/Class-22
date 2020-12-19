@@ -58,8 +58,9 @@ function draw() {
 function keyPressed() {
  if (keyCode === DOWN_ARROW) {
     // Look at the hints in the document and understand how to make the package body fall only on press of the Down arrow key.
+	packageBody.body
 	packageBody.velocityY = -5;
-	Matter.Body.setStatic(Matter.body,true);
+	Matter.Body.setStatic(packageBody,true);
     
   }
 }
